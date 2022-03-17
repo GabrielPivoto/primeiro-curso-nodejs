@@ -19,7 +19,7 @@ app.get("/data",function(req,res){
 // Configurando uma rota com parâmetros
 app.get("/ola/:nome",function(req,res){
     //res.send(req.params) // Parâmetros da requisição
-    res.send(`Howdy, ${req.params.nome}!`)
+    res.send(`<h1>Howdy, ${req.params.nome}!</h1>`)
 })
 
 app.listen(8081,function(){ //deve ser a última linha de código relacionada ao express
