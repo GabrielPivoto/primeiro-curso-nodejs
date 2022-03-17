@@ -22,6 +22,11 @@ app.get("/ola/:nome",function(req,res){
     res.send(`<h1>Howdy, ${req.params.nome}!</h1>`)
 })
 
+//Carregando arquivo HTML
+app.get("/file",function(req,res){
+    res.sendFile(__dirname + "/HTML/index.html") //__dirname é o diretório raiz
+})
+
 app.listen(8081,function(){ //deve ser a última linha de código relacionada ao express
     console.log("Servidor rodando em localhost:8081")
 }) 
