@@ -9,7 +9,7 @@ app.get("/",function(req,res){
 })
 
 app.get("/info",function(req,res){
-    res.send("Página de info")
+    res.sendFile(__dirname + "/HTML/info.html")
 })
 
 app.get("/data",function(req,res){
